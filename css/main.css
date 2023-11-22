@@ -1,0 +1,228 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #000;
+	font-size: 14px;
+}
+
+.l-wrapper {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.l-title-1 {
+	font-size: 34px;
+	font-weight: 600;
+}
+
+.l-button {
+	display: inline-block;
+	padding: 9px 22px;
+	background-color: #070707;
+	border-radius: 30px;
+
+	transition: background-color 0.2s ease-in, top 0.2s ease-in;
+
+	color: #fff;
+	font-size: 18px;
+
+	&:hover {
+		background-color: #292929;
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+		background-color: #000;
+	}
+}
+
+/* Header */
+
+.l-header {
+	padding-top: 46px;
+	background-color: #f1f1f1;
+}
+
+.l-header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 76px;
+}
+
+.l-logo {
+	position: relative;
+	padding: 0 12px 3px 0;
+	font-weight: 700;
+	font-size: 32px;
+	color: #000;
+	line-height: 1;
+}
+
+.l-logo::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	content: '';
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #fda300;
+	border-radius: 50%;
+}
+
+/* Nav */
+
+.l-nav-list {
+	display: flex;
+	column-gap: 50px;
+
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.l-nav-button {
+	display: none;
+}
+
+.l-nav-link {
+	color: #000;
+}
+
+.l-nav-link.active {
+	color: #606060;
+}
+
+/* Header Content */
+
+.l-header-row {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+}
+
+.l-header-content {
+	max-width: 500px;
+	margin-top: 124px;
+}
+
+.l-header-heading {
+	margin-bottom: 20px;
+
+	font-weight: 600;
+	font-size: 44px;
+}
+
+.l-header-content p {
+	line-height: 2;
+}
+
+/* Services */
+
+.l-services {
+	padding: 90px 0;
+}
+
+.l-services-row {
+	display: flex;
+	column-gap: 30px;
+	row-gap: 60px;
+	flex-wrap: wrap;
+}
+
+.l-service-card {
+	flex: 1 1 0;
+	min-width: 315px;
+}
+
+.l-service-card-img {
+	margin-bottom: 30px;
+}
+
+.l-service-card-title {
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.l-service-card p {
+	line-height: 2;
+}
+
+/* Portfolio */
+
+.l-portfolio {
+	padding: 90px 0;
+	background-color: #f1f1f1;
+}
+
+.l-portfolio-title {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.l-project {
+	text-align: center;
+}
+
+.l-project + .l-project {
+	margin-top: 90px;
+}
+
+.l-project-img {
+	margin-bottom: 40px;
+}
+
+.l-project-title {
+	font-size: 18px;
+}
+
+.l-project-title a {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* Contacts */
+
+.l-contacts {
+	padding: 90px 0;
+	text-align: center;
+}
+
+.l-contacts-title {
+	margin-bottom: 40px;
+}
+
+.l-contacts-content {
+	margin: 0 auto 40px;
+	max-width: 480px;
+	margin-bottom: 40px;
+
+	font-size: 18px;
+}
+
+.l-contacts-content p + p {
+	margin-top: 1em;
+}
+
+.l-contacts-button {
+	margin-bottom: 80px;
+}
+
+.l-contacts-socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 60px;
+	margin-bottom: 40px;
+}
+
+.l-contacts-footer {
+	color: #828282;
+}
